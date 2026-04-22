@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fraud Detection — Executive Summary</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #0f1923;
+      color: #f0f4f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    .slide {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #94a3b8;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #f0f4f8;
+      margin-bottom: 48px;
+      line-height: 1.15;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 52px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #1e2d3d;
+      border-left: 4px solid #ef4444;
+      border-radius: 8px;
+      padding: 20px 24px;
+    }
+
+    .icon {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+      width: 44px;
+      text-align: center;
+    }
+
+    .item-text {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .item-text strong {
+      color: #ef4444;
+    }
+
+    .callout {
+      background: #14532d;
+      border: 1px solid #16a34a;
+      border-radius: 8px;
+      padding: 20px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .callout-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+
+    .callout-text {
+      font-size: 1.15rem;
+      color: #bbf7d0;
+      line-height: 1.5;
+    }
+
+    .callout-text strong {
+      color: #4ade80;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>Fraud Detection System</h1>
+    <h2>What Was Wrong &amp; What We Fixed</h2>
+
+    <div class="items">
+      <div class="item">
+        <div class="icon">📱</div>
+        <div class="item-text"><strong>High-risk devices</strong> were being treated as safe</div>
+      </div>
+      <div class="item">
+        <div class="icon">🌍</div>
+        <div class="item-text"><strong>International transactions</strong> were flagged as lower risk</div>
+      </div>
+      <div class="item">
+        <div class="icon">⚡</div>
+        <div class="item-text"><strong>Rapid purchasing activity</strong> was rewarded, not flagged</div>
+      </div>
+      <div class="item">
+        <div class="icon">📋</div>
+        <div class="item-text"><strong>Customers with prior fraud history</strong> were scored as lower risk</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-icon">✅</div>
+      <div class="callout-text">
+        All four issues have been corrected. Previously, <strong>$4,855 in confirmed fraud</strong> was labeled low risk.
+        Now, <strong>87% of that exposure surfaces as high risk</strong> for our fraud team to action.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
